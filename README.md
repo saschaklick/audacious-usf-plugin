@@ -11,6 +11,8 @@ Then lucashpandolfo forked and restored the plugin (https://github.com/lucashpan
 
 It was further forked and made compatible with Audacious 3.8 onwards by Sascha Klick in 2018 (https://github.com/saschaklick/audacious-usf-plugin).
 
+In 2025 it was fixed again to work with Audacious 4.3.2 by switching to CPU interpreter instead of recompiler.
+
 # Installation
 
 ```bash
