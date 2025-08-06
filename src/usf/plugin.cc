@@ -75,6 +75,9 @@ void USFPlugin::add_buffer(unsigned char *buf, unsigned int length){
 		usf_stop(this);
 		return;
 	}
+
+    if(check_seek() != -1){        
+    }
 	
     int32_t i = 0, out = 0;
     double vol = 1.0;
