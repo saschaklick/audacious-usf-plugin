@@ -284,7 +284,7 @@ int LoadUSF(const gchar * fn, VFSFile * fil)
 bool usf_init()
 {
     use_audiohle = 0;
-    use_interpreter = 0;
+    use_interpreter = 1;
     RSP_Cpu = 0;		// 0 is recompiler, 1 is interpreter
 
     return true;
@@ -364,6 +364,7 @@ bool usf_play(USFPlugin* context, const gchar * filename, VFSFile* file)
 	while (fake_seek_stopping != 2)
 	    usleep(1);
 	fake_seek_stopping = 4;
+	
     }
 
     Release_Memory();
