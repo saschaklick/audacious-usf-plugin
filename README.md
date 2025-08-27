@@ -13,6 +13,14 @@ It was further forked and made compatible with Audacious 3.8 onwards by Sascha K
 
 In 2025 it was fixed again to work with Audacious 4.3.2 by switching to CPU interpreter instead of recompiler.
 
+# Compatibility
+
+The plugin uses an out-dated Project 64 core. A simple drop-in replacement of a newer version of the core is not feasible, but still possible.
+
+Games that did not work with the core in the mid-2000s will not have their USFs play in the plugin. *Conker's Bad Fur Day* is such a candiate, *Blast Corps* might be too.
+
+There are newer USF sets marked `[fixed]`. These actually do not work with the plugin and produce garbled and speed-up audio. The non-fixed versions of the sets work though.
+
 # Installation
 
 ```bash
