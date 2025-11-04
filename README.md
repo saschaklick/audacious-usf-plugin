@@ -19,7 +19,7 @@ The plugin uses an out-dated Project 64 core. A simple drop-in replacement of a 
 
 Games that did not work with the core in the mid-2000s will not have their USFs play in the plugin. *Conker's Bad Fur Day* is such a candiate, *Blast Corps* might be too.
 
-There are newer USF sets marked `[fixed]`. These actually do not work with the plugin and produce garbled and speed-up audio. The non-fixed versions of the sets work though.
+There are newer USF sets marked `[fixed]`. These actually do not work with the plugin and produce garbled and sped-up audio. The non-fixed versions of the sets work though.
 
 # Installation
 
