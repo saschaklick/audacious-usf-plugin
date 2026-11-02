@@ -74,7 +74,7 @@ AC_CONFIG_COMMANDS_PRE([
 ])
 
 AC_CONFIG_COMMANDS_POST([
-	${as_echo:="echo"} ${as_me:="configure"}": touching .deps files"
+	AS_ECHO(["$as_me: touching .deps files"])
 	for i in $(find . -name Makefile); do
 		DEPSFILE="$(dirname $i)/.deps"
 		test -f "$DEPSFILE" && rm "$DEPSFILE"
