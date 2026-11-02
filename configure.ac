@@ -25,12 +25,16 @@ AC_CHECK_FUNCS([mkdtemp])
 
 dnl gettext
 dnl =======
-AM_GNU_GETTEXT([external])
+dnl Plain checks rather than AM_GNU_GETTEXT: gettext 0.23+ no longer installs
+dnl its m4 macros where aclocal looks, and glibc provides gettext() itself.
+AC_PATH_PROG([MSGFMT], [msgfmt], [:])
 if test "$MSGFMT" = ":" ; then
     AC_MSG_ERROR([msgfmt was not found; have you installed gettext?])
 fi
 
-LIBS="$LIBS $LIBINTL"
+AC_CHECK_FUNCS([gettext dcgettext], [],
+    [AC_MSG_ERROR([gettext() not found in the C library])])
+AC_DEFINE([ENABLE_NLS], [1], [Define to 1 if translation of program messages is requested])
 
 dnl Check for Audacious
 dnl ===================
